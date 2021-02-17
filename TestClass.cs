@@ -13,7 +13,7 @@ namespace SeleniumTutorials
     [TestFixture]
     public class TestClass : BaseTest
     {
-        [Test]
+        [Test, Category("Smoke Testing")]
         public void TestMethod1()
         {
             // TODO: Add your test code here
@@ -24,7 +24,7 @@ namespace SeleniumTutorials
             
         }
 
-        [Test]
+        [Test, Category("Regression Testing")]
         public void TestMethod2()
         {
             // TODO: Add your test code here
@@ -35,7 +35,7 @@ namespace SeleniumTutorials
 
         }
 
-        [Test]
+        [Test, Category("Smoke Testing")]
         public void TestMethod3()
         {
             // TODO: Add your test code here
@@ -43,6 +43,8 @@ namespace SeleniumTutorials
 
             IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
             EmailTextField.SendKeys("Selenium c#");
+            driver.FindElement(By.CssSelector("#u_0_2_6V"));
+            
             Thread.Sleep(3000);
 
         }

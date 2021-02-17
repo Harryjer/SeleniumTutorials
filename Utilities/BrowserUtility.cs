@@ -3,27 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace SeleniumTutorials.BaseClass
+
+namespace SeleniumTutorials.Utilities
 {
-    public class BaseTest
+    public class BrowserUtility
     {
-        public IWebDriver driver;
-        [SetUp]
-        public void Open()
+        public IWebDriver Init(IWebDriver driver)
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Url = "https://www.facebook.com/";
+            return driver;
         }
-        [TearDown]
-        public void Close()
-        {
-            driver.Quit();
-        }
-
     }
 }
