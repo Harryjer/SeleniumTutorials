@@ -19,10 +19,74 @@ namespace SeleniumTutorials
         [Test, Category("UAT testing"), Category("Module")]
         public void TestMethod1()
         {
-            new BrowserUtility().Init(driver);
+            var Driver = new BrowserUtility().Init(driver);
             IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
             EmailTextField.SendKeys("Selenium c#");
-        }  
-        
+            Driver.Close();
+        }
+        [Test, Category("UAT testing"), Category("Module")]
+        public void TestMethod2()
+        {
+            var Driver = new BrowserUtility().Init(driver);
+            IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+            EmailTextField.SendKeys("Selenium c#");
+            Driver.Close();
+        }
+        [Test, Category("UAT testing"), Category("Module")]
+        public void TestMethod3()
+        {
+            var Driver = new BrowserUtility().Init(driver);
+            IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+            EmailTextField.SendKeys("Selenium c#");
+            Driver.Close();
+        }
+        [Test, Category("UAT testing"), Category("Module")]
+        public void TestMethod4()
+        {
+            var Driver = new BrowserUtility().Init(driver);
+            IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+            EmailTextField.SendKeys("Selenium c#");
+            Driver.Close();
+        }
+        [Test, Category("UAT testing"), Category("Module")]
+        public void TestMethod5()
+        {
+            var Driver = new BrowserUtility().Init(driver);
+            IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+            EmailTextField.SendKeys("Selenium c#");
+            Driver.Close();
+        }
+        [Test, Category("UAT testing"), Category("Module")]
+        public void TestMethod6()
+        {
+            var Driver = new BrowserUtility().Init(driver);
+            IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+            EmailTextField.SendKeys("Selenium c#");
+            Driver.Close();
+        }
+        [Test, Category("UAT testing"), Category("Module")]
+        public void TestMethod7()
+        {
+            var Driver = new BrowserUtility().Init(driver);
+            IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+            EmailTextField.SendKeys("Selenium c#");
+            Driver.Close();
+        }
+        [Test, Category("UAT testing"), Category("Module")]
+        public void TestMethod8()
+        {
+            var Driver = new BrowserUtility().Init(driver);
+            IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+            EmailTextField.SendKeys("Selenium c#");
+            Driver.Close();
+        }
+        [Test, Category("UAT testing"), Category("Module")]
+        public void TestMethod9()
+        {
+            var Driver = new BrowserUtility().Init(driver);
+            IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+            EmailTextField.SendKeys("Selenium c#");
+            Driver.Close();
+        }
     }
 }
