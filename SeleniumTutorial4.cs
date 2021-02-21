@@ -18,13 +18,34 @@ namespace SeleniumTutorials
         [TestCaseSource("DataDrivenTesting")]
         public void Test1(String urlName)
         {
-            IWebDriver driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            //driver.Url = "https://www.facebook.com/";
-            driver.Url = urlName;
-            //IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
-            //EmailTextField.SendKeys("Selenium c#");
-            driver.Quit();
+            IWebDriver driver = null;
+            try
+            {
+                driver = new ChromeDriver();
+                driver.Manage().Window.Maximize();
+                //driver.Url = "https://www.facebook.com/";
+                driver.Url = urlName;
+                //IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+                //EmailTextField.SendKeys("Selenium c#");
+                driver.Quit();
+            }
+            catch (Exception e)
+            {
+                ITakesScreenshot ts =  driver as ITakesScreenshot;
+                Screenshot screenshot = ts.GetScreenshot();
+                screenshot.SaveAsFile(".jpeg",ScreenshotImageFormat.Jpeg);
+                Console.WriteLine(e.StackTrace);
+                throw;
+
+            }
+            finally
+            {
+                if(driver!= null)
+                {
+                    driver.Quit();
+                }
+            }
+           
         }
 
         static IList DataDrivenTesting()
