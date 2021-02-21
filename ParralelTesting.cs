@@ -16,7 +16,7 @@ namespace SeleniumTutorials
     {
         IWebDriver driver;
         // TODO: Add your test code here
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod1()
         {
             var Driver = new BrowserUtility().Init(driver);
@@ -24,7 +24,7 @@ namespace SeleniumTutorials
             EmailTextField.SendKeys("Selenium c#");
             Driver.Close();
         }
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod2()
         {
             var Driver = new BrowserUtility().Init(driver);
@@ -32,7 +32,7 @@ namespace SeleniumTutorials
             EmailTextField.SendKeys("Selenium c#");
             Driver.Close();
         }
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod3()
         {
             var Driver = new BrowserUtility().Init(driver);
@@ -40,7 +40,7 @@ namespace SeleniumTutorials
             EmailTextField.SendKeys("Selenium c#");
             Driver.Close();
         }
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod4()
         {
             var Driver = new BrowserUtility().Init(driver);
@@ -48,7 +48,7 @@ namespace SeleniumTutorials
             EmailTextField.SendKeys("Selenium c#");
             Driver.Close();
         }
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod5()
         {
             var Driver = new BrowserUtility().Init(driver);
@@ -56,7 +56,7 @@ namespace SeleniumTutorials
             EmailTextField.SendKeys("Selenium c#");
             Driver.Close();
         }
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod6()
         {
             var Driver = new BrowserUtility().Init(driver);
@@ -64,7 +64,7 @@ namespace SeleniumTutorials
             EmailTextField.SendKeys("Selenium c#");
             Driver.Close();
         }
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod7()
         {
             var Driver = new BrowserUtility().Init(driver);
@@ -72,7 +72,7 @@ namespace SeleniumTutorials
             EmailTextField.SendKeys("Selenium c#");
             Driver.Close();
         }
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod8()
         {
             var Driver = new BrowserUtility().Init(driver);
@@ -80,7 +80,7 @@ namespace SeleniumTutorials
             EmailTextField.SendKeys("Selenium c#");
             Driver.Close();
         }
-        [Test, Category("UAT testing"), Category("Module")]
+        [Test, Category("UAT testing"), Category("Module1")]
         public void TestMethod9()
         {
             var Driver = new BrowserUtility().Init(driver);

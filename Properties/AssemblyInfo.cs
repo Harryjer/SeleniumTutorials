@@ -34,7 +34,7 @@ using NUnit.Framework;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
 //To define Test Attributes
-[assembly: Parallelizable(ParallelScope.Children)]
+//[assembly: Parallelizable(ParallelScope.Children)]
 
 //Number of Brwosers
-[assembly: LevelOfParallelism(4)]
+//[assembly: LevelOfParallelism(10)]
