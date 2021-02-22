@@ -33,7 +33,7 @@ namespace SeleniumTutorials
             {
                 ITakesScreenshot ts =  driver as ITakesScreenshot;
                 Screenshot screenshot = ts.GetScreenshot();
-                screenshot.SaveAsFile(".jpeg",ScreenshotImageFormat.Jpeg);
+                screenshot.SaveAsFile("F:\\QA\\Selenium Training\\SeleniumTutorials\\screenshot.jpeg", ScreenshotImageFormat.Jpeg);
                 Console.WriteLine(e.StackTrace);
                 throw;
 
