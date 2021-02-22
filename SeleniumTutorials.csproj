@@ -75,11 +75,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass\BaseTest.cs" />
+    <Compile Include="Page Objects\channel.cs" />
+    <Compile Include="Page Objects\result.cs" />
+    <Compile Include="Page Objects\search.cs" />
     <Compile Include="ParralelTesting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OrderSkipAttribute.cs" />
     <Compile Include="SeleniumTutorial4.cs" />
     <Compile Include="SeleniumTutorial5.cs" />
+    <Compile Include="Test Scripts\Model1.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="Utilities\BrowserUtility.cs" />
   </ItemGroup>

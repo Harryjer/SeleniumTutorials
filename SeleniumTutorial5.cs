@@ -64,5 +64,39 @@ namespace SeleniumTutorials
             }
 
         }
+        public void Test2()
+        {
+            IWebDriver driver = null;
+            ExtentTest test = null;
+            try
+            {
+                test = extent.CreateTest("Test1").Info("Test Started");
+                driver = new ChromeDriver();
+                driver.Manage().Window.Maximize();
+                test.Log(Status.Info, "Chrome browser launched");
+                driver.Url = "https://www.facebook.com/";
+
+                IWebElement EmailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+                EmailTextField.SendKeys("Selenium c#");
+                test.Log(Status.Info, "Email ID confirmed");
+                test.Log(Status.Pass, "Test is passed");
+                driver.Quit();
+                test.Log(Status.Pass, "Driver is closed");
+            }
+            catch (Exception e)
+            {
+                test.Log(Status.Fail, e.ToString());
+                throw;
+
+            }
+            finally
+            {
+                if (driver != null)
+                {
+                    driver.Quit();
+                }
+            }
+
+        }
     }
 }
